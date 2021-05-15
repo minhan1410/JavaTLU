@@ -1,0 +1,7 @@
+Bài 8. Xây dựng lớp SoNgauNhien có một thuộc tính là số ngẫu nhiên kiểu int.
+
+- Tạo cấu tử và các phương thức đặt và lấy giá trị thuộc tính. Trong đó phương thức set hoặc
+cấu tử mặc định sẽ sinh ra một số ngẫu nhiên nằm trong khoảng từ 1 đến 100.
+- Trong hàm main(): Tạo ra một số lượng tùy ý các đối tượng của lớp SoNgauNhien. Bạn hãy
+sửa đổi lớp SoNgauNhien sao cho chương trình có thể in ra màn hình số lượng đối tượng của lớp
+SoNgauNhien (có thể thêm thuộc tính, phương thức cho lớp SoNgauNhien này) mà bạn đã tạo ra.

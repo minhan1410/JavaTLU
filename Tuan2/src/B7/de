@@ -1,0 +1,30 @@
+Bài 7.
+a. Xây dựng lớp NhanVien có thuộc tính họ và tên.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính.
+- Viết phương thức tính lương để trả về số tiền lương của nhân viên (giả sử ở lớp này phương
+thức sẽ trả về giá trị là 0).
+b. Xây dựng lớp NhanVienFullTime kế thừa từ lớp NhanVien ở trên và có thêm một thuộc tính là số
+lượng ngày làm việc trong tháng có kiểu int.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính.
+- Nạp chồng phương thức tính lương để trả về số tiền lương của nhân viên theo công thức:
+
+tiền lương = số ngày làm việc * 500.000đ
+
+c. Xây dựng lớp NhanVienPartTime kế thừa từ lớp NhanVien ở trên và có thêm một thuộc tính là số
+lượng giờ làm việc trong tháng có kiểu int.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính.
+- Nạp chồng phương thức tính lương để trả về số tiền lương của nhân viên theo công thức:
+
+tiền lương = số giờ làm việc * 40.000đ
+
+d. Trong hàm main() minh họa:
+- Xây dựng 5 đối tượng thuộc lớp NhanVien.
+- Với mỗi đối tượng thuộc lớp NhanVien ở trên, ta thực hiện:
++ Sinh một số ngẫu nhiên trong khoảng từ 1 đến 100.
++ Nếu số ngẫu nhiên là số lẻ thì khởi tạo đối tượng NhanVienFullTime cho đối tượng
+
+NhanVien tương ứng. Số ngày làm việc sẽ là một số ngẫu nhiên nằm từ 15 cho đến 25 ngày.
+
++ Nếu số ngẫu nhiên là số chẵn thì khởi tạo đối tượng NhanVienPartTime cho đối
+tượng NhanVien tương ứng. Số giờ làm việc sẽ là một số ngẫu nhiên nằm từ 80 cho đến 200 giờ.
+- In ra màn hình số tiền lương mà mỗi nhân viên nhận được.

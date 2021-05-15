@@ -1,0 +1,6 @@
+Bài 1. Xây dựng lớp SinhVien gồm các thuộc tính mã sinh viên, họ và tên, năm sinh và điểm Java. Xây
+dựng các phương thức đặt và lấy giá trị các thuộc tính cho lớp SinhVien này. Ngoài ra, xây dựng một
+phương thức trả về tuổi của sinh viên và một phương thức tên là hienThiThongTin() được sử dụng để
+hiển thị thông tin của SinhVien theo cú pháp:
+Sinh viên <họ và tên>, <tuổi> tuổi, có mã sinh viên là <mã sinh viên> đạt <điểm Java> điểm Java.
+Viết minh họa bên trong hàm main()

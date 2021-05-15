@@ -1,0 +1,2 @@
+Bài tập 6. Sử dụng lớp Stack ở Bài tập 4 để làm công việc sau: Đọc từ bàn phím một dãy ký tự, sau đó
+in ra màn hình dãy ký tự đảo ngược của dãy ký được nhập vào.

@@ -1,0 +1,7 @@
+Bài 2. Tạo một lớp quản lý tài khoản ngân hàng gồm các thuộc tính số tài khoản, số dư, tên khách
+hàng, email và số điện thoại.
+a. Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính.
+b. Tạo phương thức gửi tiền để cho phép khách hàng tăng số dư tài khoản lên.
+c. Tạo phương thức rút tiền để cho phép khách hàng giảm số dư tài khoản xuống, tuy nhiên không cho
+phép rút nếu số dư tài khoản nhỏ hơn số tiền cần rút.
+d. Viết minh họa bên trong hàm main()

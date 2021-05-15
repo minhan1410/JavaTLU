@@ -1,0 +1,10 @@
+Bài 3. Xây dựng lớp quản lý tọa độ của điểm trên không gian 2 chiều có tên là Point, lớp gồm có hai
+thuộc tính x và y với kiểu dữ liệu là int.
+a. Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính.
+b. Xây dựng phương thức khoangcach không tham số, được dùng để tính khoảng cách của tọa độ hiện
+tại với gốc tọa độ.
+c. Xây dựng phương thức khoangcach 02 tham số x và y có kiểu dữ liệu là int, được dùng để tính
+khoảng cách của tọa độ hiện tại với tọa độ (x, y).
+d. Xây dựng phương thức khoangcach 01 tham số có kiểu dữ liệu là Point, được dùng để tính khoảng
+cách của tọa độ hiện tại với tọa độ được truyền vào thông qua lớp Point.
+e. Viết minh họa bên trong hàm main()

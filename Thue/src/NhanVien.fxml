@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="560.0" prefWidth="1138.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.ControlNhanVien">
+   <children>
+      <Label layoutX="416.0" layoutY="14.0" text="Nhân viên">
+         <font>
+            <Font size="50.0" />
+         </font>
+      </Label>
+      <AnchorPane layoutX="3.0" layoutY="86.0" prefHeight="474.0" prefWidth="1130.0">
+         <children>
+            <Label layoutX="84.0" layoutY="52.0" text="Nhập ID:">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textID" layoutX="233.0" layoutY="57.0" />
+            <Label layoutX="29.0" layoutY="176.0" text="Nhập năm sinh:">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textTen" layoutX="233.0" layoutY="111.0" prefHeight="31.0" prefWidth="187.0" />
+            <Label layoutX="78.0" layoutY="109.0" text="Nhập tên:">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textNamSinh" layoutX="233.0" layoutY="179.0" prefHeight="31.0" prefWidth="187.0" />
+            <Label layoutX="18.0" layoutY="250.0" text="Nhập tổng lương:">
+               <font>
+                  <Font size="25.0" />
+               </font>
+            </Label>
+            <TextField fx:id="textTongLg" layoutX="233.0" layoutY="252.0" prefHeight="31.0" prefWidth="187.0" />
+            <TableView fx:id="table" layoutX="536.0" layoutY="15.0" prefHeight="390.0" prefWidth="546.0">
+              <columns>
+                <TableColumn fx:id="tableID" prefWidth="75.0" text="ID" />
+                <TableColumn fx:id="tableTen" prefWidth="171.0" text="Tên" />
+                  <TableColumn fx:id="tableTuoi" prefWidth="112.0" text="Tuổi" />
+                  <TableColumn fx:id="tableTongLg" prefWidth="187.19998779296873" text="Tổng thu nhập" />
+              </columns>
+            </TableView>
+            <Button layoutX="29.0" layoutY="339.0" mnemonicParsing="false" onAction="#Nhap" prefHeight="52.0" prefWidth="86.0" text="Nhập">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="377.0" layoutY="338.0" mnemonicParsing="false" onAction="#Thue" prefHeight="52.0" prefWidth="86.0" text="Thuế">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="208.0" layoutY="339.0" mnemonicParsing="false" onAction="#Sua" prefHeight="52.0" prefWidth="86.0" text="Sửa">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+         </children>
+      </AnchorPane>
+   </children>
+</AnchorPane>

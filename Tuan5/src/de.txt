@@ -1,0 +1,19 @@
+Bài tập 2: Viết chương trình thực hiện các yêu cầu sau:
+- Nhập vào 1 chuỗi bất kỳ từ bàn phím.
+- Thống kê những từ trong chuỗi đó xuất hiện bao nhiêu lần rồi đưa vào
+danh sách Map, với từ nằm trong Key và Số lượng xuất hiện của từ nằm
+trong Value.
+- Hiện lên màn hình danh sách Map được sắp xếp theo khóa.
+Chú ý: Sử dụng biểu thức Lamda để thực hiện các nhiệm vụ sắp xếp (sắp xếp tăng dần hoặc giảm dần)
+và hiển thị.
+
+Bài tập 3: Viết chương trình thực hiện các yêu cầu sau:
+- Nhập vào 1 chuỗi bất kỳ từ bàn phím.
+- Thống kê những từ trong chuỗi đó xuất hiện bao nhiêu lần
+rồi đưa vào danh sách Map, với số lượng
+từ nằm trong Key và từ xuất hiện nằm trong Value.
+- Hiện lên màn hình danh sách Map được sắp xếp theo khóa và
+value. Tức là thông tin hiển thị sẽ được
+sắp xếp theo khóa, nếu khóa trùng nhau thì sắp xếp theo value.
+Chú ý: Sử dụng biểu thức Lamda để thực hiện các nhiệm vụ sắp xếp (sắp xếp tăng dần hoặc giảm dần)
+và hiển thị.

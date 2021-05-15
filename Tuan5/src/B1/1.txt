@@ -1,0 +1,10 @@
+Bài tập 1: Xây dựng lớp SinhVien gồm 3 thuộc tính mã sinh viên,
+họ và tên, điểm tốt nghiệp. Đưa một danh sách n sinh viên vào một
+tập hợp có kiểu HashSet theo quy tắc nếu sinh viên có mã giống nhau
+được đưa vào thì coi đó là phần tử trùng nhau.
+Ở hàm main, xây dựng một menu lựa chọn thực hiện một trong các chức năng sau:
+1. Hiện lên màn hình danh sách sinh viên được sắp xếp theo mã sinh viên
+2. Hiện lên màn hình danh sách sinh viên được sắp xếp theo họ và tên
+3. Hiện lên màn hình danh sách sinh viên được sắp xếp theo điểm tốt nghiệp
+Chú ý: Sử dụng biểu thức Lamda để thực hiện các nhiệm vụ sắp xếp trên (sắp xếp tăng dần hoặc giảm
+dần) và hiển thị.

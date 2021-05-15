@@ -1,0 +1,9 @@
+Bài tập 2.
+a. Xây dựng Interface IHinh có chứa các phương thức trừu tượng là tính chu vi, tính diện tích và in
+thông tin (được sử dụng để in thông tin diện tích và chu vi của hình).
+b. Xây dựng lớp HinhChuNhat thực hiện Interface IHinh và thêm 2 thuộc tính chiều dài và chiều rộng.
+Thực hiện các phương thức của Interface IHinh.
+c. Xây dựng lớp HinhTron thực hiện Interface IHinh và thêm thuộc tính bán kính. Thực hiện các
+phương thức của Interface IHinh.
+d. Hàm main: Xây dựng một danh sách ArrayList các hình (mỗi phần tử có thể là hình chữ nhật, có thể
+là hình tròn). Sau đó in toàn bộ thông tin của ArrayList ra màn hình.

@@ -1,0 +1,5 @@
+Bài tập 3. Viết chương trình mycopy sử dụng như sau: java mycopy filename1 filename2
+Nếu filename1 và filename2 là 2 file thì chương trình copy nội dung của filename1 sang filename2
+Nếu filename2 là thư mục thì copy filename1 sang thư mục filename2
+Nếu filename1 có tên là con thì cho phép tạo filename2 với nội dung gõ từ bàn phím
+(giống lệnh copy con)

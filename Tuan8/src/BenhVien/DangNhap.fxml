@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="471.0" prefWidth="692.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BenhVien.DangNhap">
+   <children>
+      <Text layoutX="105.0" layoutY="98.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lý bệnh viện" textAlignment="CENTER" wrappingWidth="481.6708984375">
+         <font>
+            <Font name="Times New Roman" size="60.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtDn" layoutX="319.0" layoutY="205.0" promptText="Nhập tên đăng nhập ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </TextField>
+      <PasswordField fx:id="txtMk" layoutX="319.0" layoutY="290.0" promptText="Nhập mật khẩu ">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </PasswordField>
+      <Text layoutX="91.0" layoutY="236.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên đăng nhập: ">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Text layoutX="115.0" layoutY="321.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Mật khẩu:">
+         <font>
+            <Font size="23.0" />
+         </font>
+      </Text>
+      <Button layoutX="256.0" layoutY="378.0" mnemonicParsing="false" onAction="#DangNhap" text="Đăng nhập">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

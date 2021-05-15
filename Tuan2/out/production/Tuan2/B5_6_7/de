@@ -1,0 +1,10 @@
+Bài 5.
+a. Xây dựng lớp HinhTron có một thuộc tính tên là bán kính và có kiểu double.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính (Chú ý trường hợp nếu bán
+kính được đưa vào nhỏ hơn 0 thì gán cho bán kính bằng 0).
+- Viết phương thức trả về diện tích của hình tròn.
+b. Xây dựng lớp HinhTruTron kế thừa từ lớp HinhTron ở trên và có thêm một thuộc tính có kiểu
+double để thể hiện chiều cao của hình trụ tròn.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính (Chú ý trường hợp nếu chiều
+cao được đưa vào nhỏ hơn 0 thì gán cho chiều cao bằng 0).
+- Viết phương thức tính thể tích của hình trụ tròn.

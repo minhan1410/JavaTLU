@@ -1,0 +1,2 @@
+Bài tập 4. Viết chương trình mydir sử dụng như sau: java mydir filename. Chương trình có chức năng
+giống lệnh dir của DOS.

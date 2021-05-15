@@ -1,0 +1,4 @@
+Bài tập 6. Viết chương trình quản lý một danh sách thí sinh (Candidate). Chương trình cho phép thêm
+thí sinh, tìm kiếm, cập nhật... Khi bắt đầu, chương trình sẽ lấy dữ liệu từ file thisinh.dat. Khi kết thúc,
+chương trình ghi lại danh sách sinh viên vào file. Có thể dùng RandomAccessFile hoặc dùng
+ObjectOutputStream và cài đặt Serializable.

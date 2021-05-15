@@ -1,0 +1,9 @@
+Bài tập 1.
+a. Xây dựng lớp BaiHat chứa hai thuộc tính tiêu đề và thời lượng (duration) của bài hát.
+b. Xây dựng lớp Album chứa danh sách các bài hát trong một ArrayList.
+c. Xây dựng lớp AlbumList chứa danh sách các Album trong một ArrayList.
+d. Xây dựng lớp PlayList chứa danh sách các bài hát đang được chơi trong một LinkedList. Trong lớp
+PlayList, khi thêm một bài hát vào danh sách, ta cần phải kiểm tra trong AlbumList xem có bài hát đó
+hay không, nếu có thì phải lấy toàn bộ thông tin của bài hát để đưa vào PlayList. Cần phải lập trình để
+có thể lấy thông tin trong PlayList bài hát đang được chơi là bài nào, bài tiếp theo và bài trước đó là bài
+gì, ...

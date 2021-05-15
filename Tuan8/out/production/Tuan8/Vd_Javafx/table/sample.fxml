@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="615.0" prefWidth="1300.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Vd_Javafx.table.Controller">
+    <children>
+        <TableView fx:id="table" layoutX="639.0" layoutY="118.0" prefHeight="462.0" prefWidth="647.0">
+            <columns>
+                <TableColumn fx:id="tId" prefWidth="136.0" text="ID" />
+                <TableColumn fx:id="tMa" minWidth="0.0" prefWidth="226.0" text="Mã" />
+                <TableColumn fx:id="tTen" minWidth="0.0" prefWidth="283.0" text="Tên" />
+            </columns>
+        </TableView>
+        <Label layoutX="10.0" layoutY="255.0" prefHeight="45.0" prefWidth="134.0" text="Nhập Mã" textFill="RED">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <Label layoutX="11.0" layoutY="376.0" prefHeight="45.0" prefWidth="145.0" text="Nhập Tên:" textFill="RED">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <TextField fx:id="TextMa" layoutX="181.0" layoutY="250.0" prefHeight="50.0" prefWidth="375.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <TextField fx:id="TextTen" layoutX="178.0" layoutY="374.0" prefHeight="50.0" prefWidth="382.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <Button layoutX="14.0" layoutY="479.0" mnemonicParsing="false" onAction="#Add" text="Add" textFill="RED">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Button>
+        <Label layoutX="11.0" layoutY="139.0" prefHeight="45.0" prefWidth="134.0" text="Nhập ID" textFill="RED">
+            <font>
+                <Font size="30.0" />
+            </font>
+        </Label>
+        <TextField fx:id="TextId" layoutX="181.0" layoutY="136.0" prefHeight="50.0" prefWidth="375.0">
+            <font>
+                <Font size="20.0" />
+            </font>
+        </TextField>
+        <Button layoutX="139.0" layoutY="479.0" mnemonicParsing="false" onAction="#Sua" text="Sửa" textFill="RED">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Button>
+        <Button layoutX="260.0" layoutY="479.0" mnemonicParsing="false" onAction="#Delete" text="Xóa" textFill="RED">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Button>
+        <Label layoutX="213.0" prefHeight="118.0" prefWidth="787.0" text="QUẢN LÝ NHÂN VIÊN" textFill="RED">
+            <font>
+                <Font size="80.0" />
+            </font>
+        </Label>
+        <Button layoutX="381.0" layoutY="479.0" mnemonicParsing="false" onAction="#Loc" text="Lọc(Id&gt;5)" textFill="RED">
+            <font>
+                <Font size="32.0" />
+            </font>
+        </Button>
+    </children>
+</AnchorPane>

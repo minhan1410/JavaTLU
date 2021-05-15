@@ -1,0 +1,2 @@
+Bài tập 2. Viết chương trình tạo file ghi 100 số Fibonacci đầu tiên.
+Viết chương trình thứ hai để đọc và hiển thị dữ liệu từ file này.

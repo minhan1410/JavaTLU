@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.paint.*?>
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="633.0" prefWidth="879.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Caculator.controler">
+   <children>
+      <Label layoutX="1.0" prefHeight="291.0" prefWidth="600.0" textAlignment="JUSTIFY" textOverrun="CLIP" AnchorPane.topAnchor="0.0">
+         <font>
+            <Font size="23.0" />
+         </font></Label>
+      <Text fill="#ff0000c4" layoutX="160.0" layoutY="67.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Caculator" textAlignment="CENTER" wrappingWidth="249.6708984375">
+         <font>
+            <Font size="55.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="55.0" layoutY="121.0" strokeType="OUTSIDE" strokeWidth="0.0" text="a= " textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <Text fill="RED" layoutX="54.0" layoutY="189.0" strokeType="OUTSIDE" strokeWidth="0.0" text="b= " textAlignment="CENTER">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtA" layoutX="207.0" layoutY="100.0" />
+      <TextField fx:id="txtB" layoutX="207.0" layoutY="164.0" />
+      <Text fill="RED" layoutX="44.0" layoutY="350.0" strokeType="OUTSIDE" strokeWidth="0.0" text="KQ= ">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Text>
+      <TextField fx:id="txtKQ" layoutX="207.0" layoutY="324.0" />
+      <Button layoutX="52.0" layoutY="238.0" mnemonicParsing="false" onAction="#Sum" text="+" textFill="#3000ff">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="207.0" layoutY="238.0" mnemonicParsing="false" onAction="#Tru" text="-" textFill="#3000ff">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="356.0" layoutY="238.0" mnemonicParsing="false" onAction="#Nhan" text="x" textFill="#3000ff">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <Button layoutX="512.0" layoutY="238.0" mnemonicParsing="false" onAction="#Chia" text=":" textFill="#3000ff">
+         <font>
+            <Font size="20.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" editable="true" layoutY="388.0" prefHeight="244.0" prefWidth="879.0" tableMenuButtonVisible="true">
+        <columns>
+          <TableColumn fx:id="tableLS" minWidth="0.0" prefWidth="872.0" text="Lịch sử" />
+        </columns>
+      </TableView>
+   </children>
+</AnchorPane>

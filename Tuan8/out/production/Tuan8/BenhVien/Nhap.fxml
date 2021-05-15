@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.input.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="687.0" prefWidth="1168.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BenhVien.Nhap">
+   <children>
+      <TabPane prefHeight="572.0" prefWidth="1164.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Bệnh nhân">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="529.0" prefWidth="1148.0">
+                     <children>
+                        <Text fill="RED" layoutX="83.0" layoutY="112.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập tên:">
+                           <font>
+                              <Font name="Times New Roman" size="25.0" />
+                           </font>
+                        </Text>
+                        <Text fill="RED" layoutX="62.0" layoutY="171.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập năm sinh:">
+                           <font>
+                              <Font name="Times New Roman" size="25.0" />
+                           </font>
+                        </Text>
+                        <Text fill="RED" layoutX="53.0" layoutY="55.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Nhập CMTND:">
+                           <font>
+                              <Font name="Times New Roman" size="25.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txt_tenBN" layoutX="281.0" layoutY="90.0" />
+                        <TextField fx:id="txt_nsBN" layoutX="281.0" layoutY="147.0" />
+                        <TextField fx:id="txt_cmtBN" layoutX="281.0" layoutY="32.0" />
+                        <Button layoutX="93.0" layoutY="233.0" mnemonicParsing="false" onAction="#AddBN" text="Thêm" textFill="RED">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                        <TableView fx:id="tableBenhNhan" editable="true" layoutX="483.0" layoutY="-2.0" prefHeight="534.0" prefWidth="681.0">
+                          <columns>
+                            <TableColumn fx:id="table_CMTND" prefWidth="217.0" text="CMTND" />
+                            <TableColumn fx:id="table_Ten" prefWidth="178.0" text="Tên" />
+                              <TableColumn fx:id="table_Tuoi" prefWidth="110.0" text="Tuổi" />
+                              <TableColumn fx:id="table_NS" prefWidth="167.0" text="Năm sinh" />
+                          </columns>
+                        </TableView>
+                        <Button layoutX="104.0" layoutY="319.0" mnemonicParsing="false" onAction="#Remove" text="Xoá" textFill="RED">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="300.0" layoutY="319.0" mnemonicParsing="false" onAction="#RemoveAll" text="Xoá tất cả" textFill="RED">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                        <Button layoutX="307.0" layoutY="233.0" mnemonicParsing="false" onAction="#Updata" text="Sửa" textFill="RED">
+                           <font>
+                              <Font size="25.0" />
+                           </font>
+                        </Button>
+                        <Text fill="RED" layoutX="75.0" layoutY="436.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm kiếm tên: ">
+                           <font>
+                              <Font name="Times New Roman" size="25.0" />
+                           </font>
+                        </Text>
+                        <TextField fx:id="txt_seachTenBN" layoutX="281.0" layoutY="413.0" onAction="#Seach" />
+                     </children></AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Bệnh án">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+          </Tab>
+        </tabs>
+      </TabPane>
+      <Button layoutX="224.0" layoutY="619.0" mnemonicParsing="false" prefHeight="54.0" prefWidth="134.0" text="Lưu file" textFill="RED">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+      <Button layoutX="710.0" layoutY="619.0" mnemonicParsing="false" onAction="#Close" text="Đóng" textFill="RED">
+         <font>
+            <Font size="25.0" />
+         </font>
+      </Button>
+   </children>
+</AnchorPane>

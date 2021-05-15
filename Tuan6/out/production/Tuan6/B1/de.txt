@@ -1,0 +1,2 @@
+Bài tập 1. Viết chương trình đếm xem trong một file văn bản cho trước có bao nhiêu câu. Biết rằng các
+câu kết thúc bởi dấu chấm.

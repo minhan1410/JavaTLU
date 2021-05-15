@@ -1,0 +1,10 @@
+Bài 4.
+a. Xây dựng lớp TacGia (tác giả) gồm các thuộc tính họ và tên, năm sinh. Xây dựng các phương thức
+đặt và lấy giá trị các thuộc tính cho lớp TacGia này.
+b. Xây dựng lớp TaiLieu (tài liệu) gồm các thuộc tính tên tài liệu, tác giả của tài liệu (sử dụng lớp
+TacGia) ở trên và năm xuất bản. Xây dựng các phương thức đặt và lấy giá trị các thuộc tính cho lớp
+TaiLieu này.
+c. Trong lớp TaiLieu, xây dựng một phương thức tên là hienThiThongTin() được sử dụng để hiển thị
+thông tin của tài liệu theo cú pháp:
+Tài liệu <tên tài liệu> của tác giả <họ và tên tác giả> được xuất bản vào năm <năm xuất bản>.
+d. Viết minh họa bên trong hàm main()

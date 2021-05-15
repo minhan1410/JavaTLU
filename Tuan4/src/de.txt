@@ -1,0 +1,30 @@
+Tất cả các lớp (nếu có) trong các bài tập bên dưới đều được đưa vào package tlu.khmt.<mã sinh
+viên>. Sau đó hàm main ở thư mục ngoài cùng sẽ gọi đến các package này và sử dụng.
+
+Bài 1: Xây dựng lớp SinhVien gồm 3 thuộc tính mã sinh viên, họ và tên, điểm tốt nghiệp. Đưa một
+danh sách n sinh viên vào một tập hợp có kiểu HashSet theo quy tắc nếu sinh viên có mã giống nhau
+được đưa vào thì coi đó là phần tử trùng nhau. Sau đó in ra màn hình danh sách toàn bộ sinh viên này.
+
+Bài 2: Cải tiến từ Bài 1. Vẫn lớp SinhVien ở Bài 1, nhưng ta sử dụng tập hợp kiểu TreeSet. Sinh viên
+sử dụng nạp chồng một phương nào đó để khi đưa phần tử vào tập hợp, danh sách tự động sắp xếp theo
+thứ tự giảm dần của điểm tốt nghiệp. Sau đó in ra màn hình 3 sinh viên có điểm tốt nghiệp cao nhất
+(không cần sử dụng thuật toán duyệt danh sách).
+Chú ý: Tra cứu, tìm cách sử dụng interface Comparable<T> và nạp chồng phương thức compareTo
+của interface này.
+
+Bài 3: Viết chương trình thực hiện các yêu cầu sau:
+- Nhập vào 1 chuỗi bất kỳ từ bàn phím.
+- Thống kê những từ trong chuỗi đó xuất hiện bao nhiêu lần rồi đưa vào danh sách Map, với từ nằm
+trong Key và Số lượng xuất hiện của từ nằm trong Value. Cuối cùng in ra màn hình 3 từ có số lượng
+xuất hiện nhiều nhất.
+
+Bài 4: Xây dựng lớp Point gồm có 2 thuộc tính x và y có kiểu dữ liệu được tham số hóa Generics đại
+diện cho giá trị của trục tung và trục hoành trên không gian 2 chiều. Đưa một danh sách n Point vào
+một tập hợp có kiểu HashSet theo quy tắc nếu giá trị x và giá trị y của các điểm giống với nhau thì coi
+các phần tử đó là trùng nhau. Ở hàm main(), in ra màn hình tất cả các trường hợp 3 điểm nằm trên cùng
+một đường thẳng.
+
+Bài 5: Xây dựng lớp NhanVien gồm 3 thuộc tính mã nhân viên (kiểu số nguyên), họ và tên, hệ số lương
+(kiểu số thực). Đưa một danh sách n nhân viên vào một tập hợp có kiểu HashSet theo quy tắc nếu nhân
+viên có mã giống nhau được đưa vào thì coi đó là phần tử trùng nhau. Sau đó in ra màn hình danh sách
+toàn bộ nhân viên này với lương = hệ số lương * 15.

@@ -1,0 +1,335 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import java.lang.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.shape.*?>
+<?import javafx.scene.text.*?>
+
+<TabPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="828.0" prefWidth="940.0" tabClosingPolicy="UNAVAILABLE" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="BenhVien.Nhap">
+  <tabs>
+    <Tab text="Quản lý bệnh nhân">
+      <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="679.0" prefWidth="761.0">
+               <children>
+                  <SplitPane dividerPositions="0.24973544973544973" layoutX="-3.0" prefHeight="802.0" prefWidth="947.0">
+                    <items>
+                      <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="750.0" prefWidth="261.0">
+                           <children>
+                              <Text layoutX="33.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Quản lý bệnh nhân" textAlignment="CENTER" wrappingWidth="171.158203125">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="124.0" layoutX="108.0" layoutY="67.0" startX="-108.0" />
+                              <ButtonBar layoutX="16.0" layoutY="105.0" prefHeight="40.0" prefWidth="200.0" />
+                              <Button layoutX="16.0" layoutY="83.0" mnemonicParsing="false" onAction="#AddBN" prefHeight="44.0" prefWidth="205.0" text="Thêm">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="16.0" layoutY="137.0" mnemonicParsing="false" onAction="#Updata" prefHeight="44.0" prefWidth="205.0" text="Sửa">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="16.0" layoutY="191.0" mnemonicParsing="false" onAction="#Remove" prefHeight="44.0" prefWidth="205.0" text="Xóa">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="16.0" layoutY="247.0" mnemonicParsing="false" onAction="#RemoveAll" prefHeight="44.0" prefWidth="205.0" text="Xóa tất cả">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="16.0" layoutY="304.0" mnemonicParsing="false" onAction="#LocTuoi" prefHeight="44.0" prefWidth="205.0" text="Lọc tuổi">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="16.0" layoutY="366.0" mnemonicParsing="false" onAction="#LuuFileBenhNhan" prefHeight="41.0" prefWidth="205.0" text="Lưu danh sách">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="16.0" layoutY="431.0" mnemonicParsing="false" onAction="#DocFile" prefHeight="41.0" prefWidth="205.0" text="Đọc danh sách">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                      <AnchorPane prefHeight="750.0" prefWidth="682.0">
+                           <children>
+                              <Text layoutX="240.0" layoutY="50.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách Bệnh nhân" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="23.0" />
+                                 </font>
+                              </Text>
+                              <TableView fx:id="tableBenhNhan" layoutX="14.0" layoutY="125.0" prefHeight="463.0" prefWidth="671.0">
+                                <columns>
+                                  <TableColumn fx:id="table_CMTND" prefWidth="163.0" text="Chứng minh nhân dân" />
+                                  <TableColumn fx:id="table_Ten" prefWidth="200.0" text="Họ và tên" />
+                                    <TableColumn fx:id="table_GioiTinh" prefWidth="75.0" text="Giới tính" />
+                                    <TableColumn fx:id="table_Tuoi" prefWidth="114.0" text="Tuổi" />
+                                    <TableColumn fx:id="table_NS" prefWidth="118.0" text="Năm sinh" />
+                                </columns>
+                              </TableView>
+                              <Text layoutX="14.0" layoutY="640.0" strokeType="OUTSIDE" strokeWidth="0.0" text="CMND:">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="14.0" layoutY="683.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Họ và tên:">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="txt_cmtBN" layoutX="115.0" layoutY="609.0" prefHeight="35.0" prefWidth="570.0" promptText="Nhập chứng minh thư nhân dân " />
+                              <TextField fx:id="txt_tenBN" layoutX="115.0" layoutY="652.0" prefHeight="35.0" prefWidth="570.0" promptText="Nhập họ tên" />
+                              <Text layoutX="18.0" layoutY="720.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Giới tính:">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="15.0" layoutY="767.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Năm sinh:">
+                                 <font>
+                                    <Font size="17.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="txt_nsBN" layoutX="114.0" layoutY="742.0" onAction="#checkTextNs" prefHeight="35.0" prefWidth="572.0" promptText="Nhập năm sinh" />
+                              <Text layoutX="14.0" layoutY="105.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tìm kiếm:">
+                                 <font>
+                                    <Font size="18.0" />
+                                 </font>
+                              </Text>
+                              <TextField fx:id="txt_seachTenBN" layoutX="114.0" layoutY="78.0" onAction="#Seach" prefHeight="34.0" prefWidth="570.0" promptText="Tìm kiếm theo tên " />
+                              <SplitMenuButton layoutX="115.0" layoutY="697.0" mnemonicParsing="false" onAction="#setToggle" text="Chọn">
+                                <items>
+                                  <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <RadioButton fx:id="GT_nam" mnemonicParsing="false" prefHeight="21.0" prefWidth="73.0" text="Nam" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <RadioButton fx:id="GT_nu" mnemonicParsing="false" prefHeight="21.0" prefWidth="60.0" text="Nữ" />
+                                       </graphic>
+                                    </MenuItem>
+                                    <MenuItem mnemonicParsing="false">
+                                       <graphic>
+                                          <RadioButton fx:id="GT_khac" mnemonicParsing="false" prefHeight="21.0" prefWidth="73.0" text="Khác" />
+                                       </graphic>
+                                    </MenuItem>
+                                </items>
+                              </SplitMenuButton>
+                           </children>
+                        </AnchorPane>
+                    </items>
+                  </SplitPane>
+               </children></AnchorPane>
+      </content>
+    </Tab>
+      <Tab text="Quản lý phòng điều trị">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="679.0" prefWidth="761.0">
+               <children>
+                  <SplitPane dividerPositions="0.25" layoutX="-4.0" layoutY="2.0" prefHeight="799.0" prefWidth="946.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="684.0" prefWidth="202.0">
+                           <children>
+                              <Text layoutX="41.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phòng điều trị" textAlignment="CENTER" wrappingWidth="143.158203125">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="124.0" layoutX="108.0" layoutY="67.0" startX="-108.0" />
+                              <ButtonBar layoutX="16.0" layoutY="105.0" prefHeight="40.0" prefWidth="200.0" />
+                              <Button layoutX="16.0" layoutY="83.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="205.0" text="Thêm">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="16.0" layoutY="137.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="205.0" text="Sửa">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="16.0" layoutY="191.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="205.0" text="Xóa">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="684.0" prefWidth="553.0">
+                           <children>
+                              <Text layoutX="155.0" layoutY="45.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách phòng điều trị" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Text>
+                              <TableView layoutX="14.0" layoutY="64.0" prefHeight="586.0" prefWidth="683.0">
+                                 <columns>
+                                    <TableColumn prefWidth="189.0" text="STT" />
+                                    <TableColumn prefWidth="493.0" text="Tên phòng điều trị" />
+                                 </columns>
+                              </TableView>
+                              <Text layoutX="22.0" layoutY="695.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Số phòng:">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Text>
+                              <Text layoutX="22.0" layoutY="744.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tên phòng điều trị:">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Text>
+                              <TextField layoutX="209.0" layoutY="670.0" prefHeight="35.0" prefWidth="489.0" />
+                              <TextField layoutX="209.0" layoutY="715.0" prefHeight="35.0" prefWidth="488.0" />
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Thêm bệnh nhân">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="679.0" prefWidth="761.0">
+               <children>
+                  <SplitPane dividerPositions="0.2505330490405117" layoutX="-4.0" layoutY="2.0" prefHeight="797.0" prefWidth="940.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="684.0" prefWidth="202.0">
+                           <children>
+                              <Text layoutX="41.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phòng điều trị" textAlignment="CENTER" wrappingWidth="143.158203125">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="124.0" layoutX="108.0" layoutY="67.0" startX="-108.0" />
+                              <ButtonBar layoutX="16.0" layoutY="105.0" prefHeight="40.0" prefWidth="200.0" />
+                              <Button layoutX="16.0" layoutY="83.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="205.0" text="Khoa nội">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="16.0" layoutY="137.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="205.0" text="Khoa ngoại">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="16.0" layoutY="191.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="205.0" text="Khoa nội">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="795.0" prefWidth="527.0">
+                           <children>
+                              <Text layoutX="238.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Danh sách bệnh nhân" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Text>
+                              <TableView layoutX="24.0" layoutY="68.0" prefHeight="630.0" prefWidth="668.0">
+                                 <columns>
+                                    <TableColumn prefWidth="181.0" text="CMND" />
+                                    <TableColumn minWidth="0.0" prefWidth="209.0" text="Họ và tên" />
+                                    <TableColumn minWidth="0.0" prefWidth="153.0" text="Giới tính" />
+                                    <TableColumn minWidth="0.0" prefWidth="124.0" text="Ngày sinh" />
+                                 </columns>
+                              </TableView>
+                              <Button layoutX="587.0" layoutY="722.0" mnemonicParsing="false" text="Thêm">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+      <Tab text="Quản lý bệnh án">
+         <content>
+            <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="679.0" prefWidth="761.0">
+               <children>
+                  <SplitPane dividerPositions="0.24973544973544973" layoutX="-4.0" layoutY="2.0" prefHeight="798.0" prefWidth="947.0">
+                     <items>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="684.0" prefWidth="202.0">
+                           <children>
+                              <Text layoutX="41.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Phòng điều trị" textAlignment="CENTER" wrappingWidth="143.158203125">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Text>
+                              <Line endX="124.0" layoutX="108.0" layoutY="67.0" startX="-108.0" />
+                              <ButtonBar layoutX="16.0" layoutY="105.0" prefHeight="40.0" prefWidth="200.0" />
+                              <Button layoutX="16.0" layoutY="83.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="205.0" text="Khoa nội ">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="16.0" layoutY="137.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="205.0" text="Khoa ngoại">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="16.0" layoutY="191.0" mnemonicParsing="false" prefHeight="44.0" prefWidth="205.0" text="Khoa sinh">
+                                 <font>
+                                    <Font size="20.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                        <AnchorPane prefHeight="684.0" prefWidth="646.0">
+                           <children>
+                              <Text layoutX="308.0" layoutY="41.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bệnh án" textAlignment="CENTER">
+                                 <font>
+                                    <Font size="25.0" />
+                                 </font>
+                              </Text>
+                              <TableView layoutX="14.0" layoutY="64.0" prefHeight="624.0" prefWidth="681.0">
+                                 <columns>
+                                    <TableColumn prefWidth="130.0" text="Họ và tên" />
+                                    <TableColumn prefWidth="95.0" text="Giới tính" />
+                                    <TableColumn prefWidth="95.0" text="Năm sinh" />
+                                    <TableColumn maxWidth="360.0" prefWidth="360.0" text="Thông tin bệnh án" />
+                                 </columns>
+                              </TableView>
+                              <Button layoutX="14.0" layoutY="712.0" mnemonicParsing="false" text="Thêm">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="114.0" layoutY="712.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="77.0" text="Xóa">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="206.0" layoutY="712.0" mnemonicParsing="false" prefHeight="45.0" prefWidth="76.0" text="Sửa">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
+                              <Button layoutX="582.0" layoutY="712.0" mnemonicParsing="false" text="Chi tiết">
+                                 <font>
+                                    <Font size="21.0" />
+                                 </font>
+                              </Button>
+                           </children>
+                        </AnchorPane>
+                     </items>
+                  </SplitPane>
+               </children>
+            </AnchorPane>
+         </content>
+      </Tab>
+  </tabs>
+</TabPane>
