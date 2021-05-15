@@ -70,7 +70,6 @@ public class Control implements Initializable {
 
     public void Reset()
     {
-        tienText.setText("");
         thueText.setText("0 Đồng");
         CacTinh.clear();
     }

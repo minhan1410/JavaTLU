@@ -1,18 +1,17 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
-<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="446.0" prefWidth="1138.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.ControlNhanVien">
+<AnchorPane prefHeight="446.0" prefWidth="1138.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.ControlNhanVien">
    <children>
       <Label layoutX="416.0" layoutY="14.0" text="Nhân viên">
          <font>
             <Font size="50.0" />
          </font>
       </Label>
-      <AnchorPane layoutX="3.0" layoutY="86.0" prefHeight="485.0" prefWidth="1130.0">
+      <AnchorPane layoutX="4.0" layoutY="87.0" prefHeight="485.0" prefWidth="1130.0">
          <children>
             <Label layoutX="84.0" layoutY="52.0" text="Nhập ID:">
                <font>
@@ -57,7 +56,22 @@
                   <Font size="20.0" />
                </font>
             </Button>
-            <Button layoutX="208.0" layoutY="339.0" mnemonicParsing="false" onAction="#Sua" prefHeight="52.0" prefWidth="86.0" text="Sửa">
+            <Button layoutX="144.0" layoutY="339.0" mnemonicParsing="false" onAction="#Sua" prefHeight="52.0" prefWidth="86.0" text="Sửa">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="263.0" layoutY="338.0" mnemonicParsing="false" onAction="#Remove" prefHeight="52.0" prefWidth="86.0" text="Xóa">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="63.0" layoutY="406.0" mnemonicParsing="false" onAction="#LuuFile" prefHeight="52.0" prefWidth="139.0" text="Lưu file">
+               <font>
+                  <Font size="20.0" />
+               </font>
+            </Button>
+            <Button layoutX="288.0" layoutY="406.0" mnemonicParsing="false" onAction="#DocFile" prefHeight="52.0" prefWidth="149.0" text="Đọc file">
                <font>
                   <Font size="20.0" />
                </font>

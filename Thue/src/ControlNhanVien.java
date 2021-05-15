@@ -1,7 +1,8 @@
 package src;
 
-import java.io.IOException;
+import java.io.*;
 import java.net.URL;
+import java.nio.charset.StandardCharsets;
 import java.util.LinkedHashSet;
 import java.util.ResourceBundle;
 import java.util.Set;
@@ -136,6 +137,8 @@ public class ControlNhanVien implements Initializable {
             else{
                 v.setId(newCMTND);
             }
+
+            table.setEditable(false);
         });
 
         tableTen.setOnEditCommit((TableColumn.CellEditEvent<NhanVien, String> event) -> {
@@ -173,6 +176,13 @@ public class ControlNhanVien implements Initializable {
     }
 
     @FXML
+    void Remove(ActionEvent event){
+        NhanVien v=table.getSelectionModel().getSelectedItem();
+        setNhanVien.remove(v);
+        listNhanVien.remove(v);
+    }
+
+    @FXML
     void Thue(ActionEvent event) throws IOException {
         try{
             FXMLLoader loader = new FXMLLoader(getClass().getResource("thue.fxml"));
@@ -188,6 +198,88 @@ public class ControlNhanVien implements Initializable {
             Alert alert=new Alert(Alert.AlertType.ERROR);
             alert.setTitle("Lỗi");
             alert.setContentText(exception.toString());
+            alert.show();
+        }
+    }
+
+    @FXML
+    void LuuFile(ActionEvent event) throws IOException {
+        Alert alert=new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Lưu file");
+        alert.setHeaderText("Đang tiến hành lưu...");
+
+        FileOutputStream fileOutputStream=null;
+        BufferedOutputStream bufferedOutputStream=null;
+
+        try {
+            fileOutputStream=new FileOutputStream("D:\\Java\\JavaTLU\\Thue\\src\\NhanVien.txt");
+            bufferedOutputStream=new BufferedOutputStream(fileOutputStream);
+
+            for(int i=0;i<listNhanVien.size();i++){
+                NhanVien v=listNhanVien.get(i);
+                bufferedOutputStream.write((v.getId()+"-"+v.getTen()+"-"+v.getNamSinh()+"-"+v.getTongThuNhap()+"*").getBytes(StandardCharsets.UTF_8));
+            }
+
+            alert.setContentText("Lưu thành công");
+        } catch (FileNotFoundException e) {
+            alert.setContentText("Gặp lỗi");
+        } finally {
+            bufferedOutputStream.close();
+            fileOutputStream.close();
+            alert.show();
+        }
+    }
+
+    @FXML
+    void DocFile(ActionEvent event) throws IOException {
+        Alert alert=new Alert(Alert.AlertType.INFORMATION);
+        alert.setTitle("Đọc file");
+        alert.setHeaderText("Đang tiến hành đọc...");
+
+        FileInputStream fileInputStream=null;
+        BufferedInputStream bufferedInputStream=null;
+
+        try{
+            fileInputStream=new FileInputStream("D:\\Java\\JavaTLU\\Thue\\src\\NhanVien.txt");
+            bufferedInputStream=new BufferedInputStream(fileInputStream);
+
+            int i,dem=0;
+            String id,ten,ns,TongThuNhap;ten=id=TongThuNhap=ns="";
+            while ((i = bufferedInputStream.read()) != -1) {
+                if((char)i=='*'){
+//                    System.out.println(cmt+"-"+ten+"-"+gt+"-"+ns);
+                    NhanVien v=new NhanVien(id,ten,Integer.parseInt(ns),Long.parseLong(TongThuNhap));
+                    if(!setNhanVien.contains(v)){
+                        setNhanVien.add(v);
+                        listNhanVien.add(v);
+                    }
+
+                    dem=0;ten=id=TongThuNhap=ns="";
+                } else if((char) i != '-'){
+                    if(dem==0){
+                        id+=""+(char) i;
+                    }
+                    if(dem==1){
+                        ten+=""+(char) i;
+                    }
+                    if(dem==2){
+                        ns+=""+(char) i;
+                    }
+                    if(dem==3){
+                        TongThuNhap+=""+(char) i;
+                    }
+                }
+                else{
+                    dem++;
+                }
+            }
+
+            alert.setContentText("Đã đọc xong");
+        } catch (FileNotFoundException e) {
+            alert.setContentText("Gặp lỗi");
+        } finally {
+            bufferedInputStream.close();
+            fileInputStream.close();
             alert.show();
         }
     }

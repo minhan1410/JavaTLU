@@ -11,12 +11,9 @@
          <font>
             <Font size="23.0" />
          </font></Text>
-      <Text layoutX="22.0" layoutY="81.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TỔNG THU NHẬP THUẾ">
-         <font>
-            <Font size="20.0" />
-         </font></Text>
+      <Text layoutX="10.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TỔNG THU NHẬP THUẾ" />
       <Text layoutX="34.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SỐ TIỀN PHẢI NỘP " />
-      <Text layoutX="22.0" layoutY="126.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SỐ NGƯỜI PHỤ THUỘC " />
+      <Text layoutX="10.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SỐ NGƯỜI PHỤ THUỘC " />
       <TextField fx:id="nguoiText" layoutX="189.0" layoutY="106.0" prefHeight="21.0" prefWidth="79.0" />
       <Button layoutX="493.0" layoutY="64.0" mnemonicParsing="false" onAction="#Tinh" prefHeight="40.0" prefWidth="57.0" text="Tính " />
       <Button layoutX="612.0" layoutY="65.0" mnemonicParsing="false" onAction="#Reset" prefHeight="40.0" prefWidth="57.0" text="Reset" />
@@ -32,6 +29,6 @@
       <Text layoutX="106.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bảng thu nhập tính thuế và thuế suất" />
       <ListView fx:id="bangPro" layoutX="413.0" layoutY="152.0" prefHeight="348.0" prefWidth="502.0" />
       <Text layoutX="417.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cách tính " wrappingWidth="79.39801025390625" />
-      <Text fx:id="tienText" layoutX="254.0" layoutY="78.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.01953125" />
+      <Text fx:id="tienText" layoutX="189.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.01953125" />
    </children>
 </AnchorPane>
