@@ -14,6 +14,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
+import javafx.scene.Node;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
 import javafx.scene.control.*;
@@ -49,14 +50,15 @@ public class ControlNhanVien implements Initializable {
     private TableColumn<NhanVien, String> tableTen;
 
     @FXML
+    private  TableColumn<NhanVien,Integer> tableNamSinh;
+
+    @FXML
     private TableColumn<NhanVien, Long> tableTongLg;
 
     private Set<NhanVien> setNhanVien=new LinkedHashSet<NhanVien>();
 
     //ObservableList: Một danh sách cho phép người nghe theo dõi các thay đổi khi chúng xảy ra
     private ObservableList<NhanVien> listNhanVien;
-
-    private static long TongThuNhap=0;
 
 
 
@@ -66,6 +68,7 @@ public class ControlNhanVien implements Initializable {
 
         tableID.setCellValueFactory(new PropertyValueFactory<NhanVien,String>("id"));
         tableTen.setCellValueFactory(new PropertyValueFactory<NhanVien,String>("ten"));
+        tableNamSinh.setCellValueFactory(new PropertyValueFactory<NhanVien,Integer>("NamSinh"));
         tableTuoi.setCellValueFactory(new PropertyValueFactory<NhanVien,Integer>("tuoi"));
         tableTongLg.setCellValueFactory(new PropertyValueFactory<NhanVien,Long>("TongThuNhap"));
 
@@ -107,6 +110,7 @@ public class ControlNhanVien implements Initializable {
 
         tableID.setCellFactory(TextFieldTableCell.<NhanVien> forTableColumn());
         tableTen.setCellFactory(TextFieldTableCell.<NhanVien> forTableColumn());
+        tableNamSinh.setCellFactory(TextFieldTableCell.<NhanVien, Integer>forTableColumn(new IntegerStringConverter()));
         tableTuoi.setCellFactory(TextFieldTableCell.<NhanVien, Integer>forTableColumn(new IntegerStringConverter()));
         tableTongLg.setCellFactory(TextFieldTableCell.<NhanVien, Long>forTableColumn(new LongStringConverter()));
 
@@ -145,6 +149,17 @@ public class ControlNhanVien implements Initializable {
             v.setTen(newTen);
         });
 
+        tableNamSinh.setOnEditCommit((TableColumn.CellEditEvent<NhanVien, Integer> event) -> {
+//            TablePosition: để đại diện cho một hàng / cột / ô trong một TableView
+            TablePosition<NhanVien, Integer> pos = event.getTablePosition();
+
+//            getNewValue():Trả về giá trị mới được nhập bởi người dùng cuối
+            Integer newNamSinh = event.getNewValue();
+            int row = pos.getRow();
+            NhanVien v = event.getTableView().getItems().get(row);
+            v.setNamSinh(newNamSinh);
+        });
+
         tableTongLg.setOnEditCommit((TableColumn.CellEditEvent<NhanVien, Long> event) -> {
 //            TablePosition: để đại diện cho một hàng / cột / ô trong một TableView
             TablePosition<NhanVien, Long> pos = event.getTablePosition();
@@ -157,19 +172,16 @@ public class ControlNhanVien implements Initializable {
         });
     }
 
-    long  LayLuong(){
-        return TongThuNhap;
-    }
-
     @FXML
-    void Thue(ActionEvent e) throws IOException {
+    void Thue(ActionEvent event) throws IOException {
         try{
+            FXMLLoader loader = new FXMLLoader(getClass().getResource("thue.fxml"));
+            Parent root = loader.load();
+            Control controller = loader.getController();
             NhanVien selected = table.getSelectionModel().getSelectedItem();
-            TongThuNhap=selected.getTongThuNhap();
+            controller.set(selected);
 
-            Parent root= FXMLLoader.load(getClass().getResource("sample.fxml"));
-            Stage stage =new Stage();
-            stage.setTitle("Tính thuế thu nhập cá nhân");
+            Stage stage = new Stage();
             stage.setScene(new Scene(root));
             stage.show();
         } catch (Exception exception){

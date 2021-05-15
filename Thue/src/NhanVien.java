@@ -18,6 +18,14 @@ public class NhanVien{
         this.id = id;
     }
 
+    public int getNamSinh() {
+        return NamSinh;
+    }
+
+    public void setNamSinh(int namSinh) {
+        NamSinh = namSinh;
+    }
+
     public int getTuoi() {
         return tuoi= java.time.LocalDate.now().getYear()-NamSinh;
     }

@@ -17,8 +17,6 @@ import java.text.DecimalFormat;
 import java.util.ResourceBundle;
 
 public class Control implements Initializable {
-    private ControlNhanVien controlNhanVien=new ControlNhanVien();
-
     @FXML
     private Text tienText;
 
@@ -66,20 +64,23 @@ public class Control implements Initializable {
         bangPro.setItems(CacTinh);
     }
 
+    public void set(NhanVien nv){
+        tienText.setText(String.valueOf(nv.getTongThuNhap()));
+    }
+
     public void Reset()
     {
-        tienText.setText(controlNhanVien.LayLuong()+" Đồng");
+        tienText.setText("");
         thueText.setText("0 Đồng");
         CacTinh.clear();
     }
 
     public void Tinh() {
         CacTinh.clear();
-        tienText.setText(controlNhanVien.LayLuong()+" Đồng");
         long Tong = 0, nguoi = 0;
         int dem = 0;double tien=0;
         try{
-            tien= controlNhanVien.LayLuong();
+            tien= Double.parseDouble(tienText.getText());
             if (nguoiText.getText().equals("")) {
                 nguoi = 0;
             }else{
