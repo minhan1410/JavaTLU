@@ -1,4 +1,4 @@
-package B1;
+// package B1;
 
 public class SinhVien {
     private String ma, ten;

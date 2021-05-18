@@ -27,6 +27,9 @@ public class Control implements Initializable {
     private Text thueText;
 
     @FXML
+    private Text thueCaNamText;
+
+    @FXML
     private TableView<Table> Bang;
 
     @FXML
@@ -61,6 +64,7 @@ public class Control implements Initializable {
         thueSuatColumn.setCellValueFactory(new PropertyValueFactory<>("thuSuat"));
         Bang.setItems(tb);
         thueText.setText("0 Đồng");
+        thueCaNamText.setText("0 Đồng");
         bangPro.setItems(CacTinh);
     }
 
@@ -71,6 +75,7 @@ public class Control implements Initializable {
     public void Reset()
     {
         thueText.setText("0 Đồng");
+        thueCaNamText.setText("0 Đồng");
         CacTinh.clear();
     }
 
@@ -94,16 +99,16 @@ public class Control implements Initializable {
                 thueText.setText("0 Đồng");
             }
             else {
-                CacTinh.add("Giảm trừ bản thân : 11.000.000 đồng");
-                CacTinh.add("Giảm trừ người phụ thuộc : "+nguoi+" * 4.400.000 = "+decimalFormat.format(nguoi*4400000)+" đồng" );
-                CacTinh.add("Tiền chịu thuế : "+decimalFormat.format(tien)+"- 11.000.000 - "+nguoi*4400000+" = "+decimalFormat.format(tienChiuThue));
+                CacTinh.add("Giảm trừ bản thân: 11.000.000 đồng");
+                CacTinh.add("Giảm trừ người phụ thuộc: "+nguoi+" * 4.400.000 = "+decimalFormat.format(nguoi*4400000)+" đồng" );
+                CacTinh.add("Tiền chịu thuế: "+decimalFormat.format(tien)+"- 11.000.000 - "+nguoi*4400000+" = "+decimalFormat.format(tienChiuThue));
                 while (tienChiuThue > S[dem] ) {
                     if(tienChiuThue<S[dem+1])
                     {
                         break;
                     }
                     Tong = (long)(P[dem] * (S[dem+1]-S[dem]) + Tong);
-                    CacTinh.add("Bậc " +(dem+1)+ " số thuế phải chịu :  ("+ decimalFormat.format(S[dem+1])+" - "+decimalFormat.format(S[dem])+" )* "+P[dem]+" = " +decimalFormat.format((S[dem+1]-S[dem]) *P[dem] )+" đồng" );
+                    CacTinh.add("Bậc " +(dem+1)+ " số thuế phải chịu:  ("+ decimalFormat.format(S[dem+1])+" - "+decimalFormat.format(S[dem])+" )* "+P[dem]+" = " +decimalFormat.format((S[dem+1]-S[dem]) *P[dem] )+" đồng" );
                     dem++;
                     if(dem==6){
                         break;
@@ -112,9 +117,11 @@ public class Control implements Initializable {
                 Tong = (long)((tienChiuThue-S[dem]) *P[dem] +Tong);
 
 
-                CacTinh.add("Bậc " +(dem+1)+ " số thuế phải chịu : ("+decimalFormat.format(tienChiuThue)+" - "+decimalFormat.format(S[dem])+" )* "+P[dem]+" = " +decimalFormat.format( (tienChiuThue-S[dem])*P[dem] ) +" đồng" );
-                CacTinh.add("Tổng tiền phải nộp : "+decimalFormat.format(Tong) +" Đồng");
+                CacTinh.add("Bậc " +(dem+1)+ " số thuế phải chịu: ("+decimalFormat.format(tienChiuThue)+" - "+decimalFormat.format(S[dem])+" )* "+P[dem]+" = " +decimalFormat.format( (tienChiuThue-S[dem])*P[dem] ) +" đồng" );
+                CacTinh.add("Thuế thu nhập: "+decimalFormat.format(Tong) +" Đồng");
+                CacTinh.add("Thuế thu nhập cả năm: "+decimalFormat.format(Tong*12) +" Đồng");
                 thueText.setText( decimalFormat.format(Tong) +" Đồng");
+                thueCaNamText.setText( decimalFormat.format(Tong*12) +" Đồng");
             }
         }catch (NumberFormatException e){
             Alert alert = new Alert(Alert.AlertType.WARNING,"Nhập sai\n");

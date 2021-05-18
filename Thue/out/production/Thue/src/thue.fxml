@@ -5,30 +5,57 @@
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="511.0" prefWidth="928.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Control">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="658.0" prefWidth="960.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.Control">
    <children>
       <Text layoutX="284.0" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TÍNH THUẾ THU NHẬP CÁ NHÂN ">
          <font>
             <Font size="23.0" />
          </font></Text>
-      <Text layoutX="10.0" layoutY="91.0" strokeType="OUTSIDE" strokeWidth="0.0" text="TỔNG THU NHẬP THUẾ" />
-      <Text layoutX="34.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SỐ TIỀN PHẢI NỘP " />
-      <Text layoutX="10.0" layoutY="127.0" strokeType="OUTSIDE" strokeWidth="0.0" text="SỐ NGƯỜI PHỤ THUỘC " />
-      <TextField fx:id="nguoiText" layoutX="189.0" layoutY="106.0" prefHeight="21.0" prefWidth="79.0" />
-      <Button layoutX="493.0" layoutY="64.0" mnemonicParsing="false" onAction="#Tinh" prefHeight="40.0" prefWidth="57.0" text="Tính " />
-      <Button layoutX="612.0" layoutY="65.0" mnemonicParsing="false" onAction="#Reset" prefHeight="40.0" prefWidth="57.0" text="Reset" />
+      <Text layoutX="133.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Lương:">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="533.0" layoutY="97.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thuế thu nhập:" wrappingWidth="122.6640625">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <Text layoutX="51.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Người phụ thuộc:" wrappingWidth="143.8076171875">
+         <font>
+            <Font size="18.0" />
+         </font></Text>
+      <TextField fx:id="nguoiText" layoutX="219.0" layoutY="121.0" prefHeight="21.0" prefWidth="79.0" />
+      <Button layoutX="310.0" layoutY="165.0" mnemonicParsing="false" onAction="#Tinh" prefHeight="44.0" prefWidth="79.0" text="Tính ">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
+      <Button layoutX="406.0" layoutY="165.0" mnemonicParsing="false" onAction="#Reset" prefHeight="44.0" prefWidth="79.0" text="Reset">
+         <font>
+            <Font size="20.0" />
+         </font></Button>
       <Accordion />
-      <Text fx:id="thueText" layoutX="189.0" layoutY="168.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.01953125" />
-      <TableView fx:id="Bang" layoutX="10.0" layoutY="226.0" prefHeight="271.0" prefWidth="399.0">
+      <Text fx:id="thueText" layoutX="676.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.01953125" />
+      <TableView fx:id="Bang" layoutX="17.0" layoutY="255.0" prefHeight="391.0" prefWidth="405.0">
         <columns>
           <TableColumn fx:id="bacColumn" prefWidth="52.79998779296875" text="Bậc " />
-          <TableColumn fx:id="thuNhapColumn" prefWidth="214.4000244140625" text="Thu nhập trên tháng/triệu đồng " />
-            <TableColumn fx:id="thueSuatColumn" prefWidth="130.0" text="Thuế suất " />
+          <TableColumn fx:id="thuNhapColumn" prefWidth="220.0" text="Thu nhập trên tháng/triệu đồng " />
+            <TableColumn fx:id="thueSuatColumn" prefWidth="131.0" text="Thuế suất " />
         </columns>
       </TableView>
-      <Text layoutX="106.0" layoutY="214.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bảng thu nhập tính thuế và thuế suất" />
-      <ListView fx:id="bangPro" layoutX="413.0" layoutY="152.0" prefHeight="348.0" prefWidth="502.0" />
-      <Text layoutX="417.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cách tính " wrappingWidth="79.39801025390625" />
-      <Text fx:id="tienText" layoutX="189.0" layoutY="90.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.01953125" />
+      <Text layoutX="48.0" layoutY="249.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Bảng thu nhập tính thuế và thuế suất">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <ListView fx:id="bangPro" layoutX="435.0" layoutY="255.0" prefHeight="391.0" prefWidth="511.0" />
+      <Text layoutX="629.0" layoutY="248.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Cách tính " wrappingWidth="94.39801025390625">
+         <font>
+            <Font size="20.0" />
+         </font></Text>
+      <Text fx:id="tienText" layoutX="219.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.01953125" />
+      <Text fx:id="thueCaNamText" layoutX="676.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.01953125" />
+      <Text layoutX="472.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thuế thu nhập cả năm:" wrappingWidth="183.8466796875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
    </children>
 </AnchorPane>

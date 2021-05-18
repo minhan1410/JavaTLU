@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="UTF-8"?>
 
+<?import java.lang.*?>
 <?import javafx.scene.control.*?>
 <?import javafx.scene.layout.*?>
 <?import javafx.scene.text.*?>
 
-<AnchorPane prefHeight="446.0" prefWidth="1138.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.ControlNhanVien">
+<AnchorPane prefHeight="446.0" prefWidth="1138.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="src.ControlNhanVien">
    <children>
       <Label layoutX="416.0" layoutY="14.0" text="Nhân viên">
          <font>
@@ -13,7 +14,7 @@
       </Label>
       <AnchorPane layoutX="4.0" layoutY="87.0" prefHeight="485.0" prefWidth="1130.0">
          <children>
-            <Label layoutX="84.0" layoutY="52.0" text="Nhập ID:">
+            <Label layoutX="96.0" layoutY="55.0" text="Nhập ID:">
                <font>
                   <Font size="25.0" />
                </font>
@@ -25,7 +26,7 @@
                </font>
             </Label>
             <TextField fx:id="textTen" layoutX="233.0" layoutY="111.0" prefHeight="31.0" prefWidth="187.0" />
-            <Label layoutX="78.0" layoutY="109.0" text="Nhập tên:">
+            <Label layoutX="90.0" layoutY="109.0" text="Nhập tên:">
                <font>
                   <Font size="25.0" />
                </font>
@@ -37,13 +38,13 @@
                </font>
             </Label>
             <TextField fx:id="textTongLg" layoutX="233.0" layoutY="252.0" prefHeight="31.0" prefWidth="187.0" />
-            <TableView fx:id="table" layoutX="536.0" layoutY="15.0" prefHeight="377.0" prefWidth="588.0">
+            <TableView fx:id="table" layoutX="491.0" layoutY="15.0" prefHeight="446.0" prefWidth="633.0">
               <columns>
                 <TableColumn fx:id="tableID" prefWidth="75.0" text="ID" />
                 <TableColumn fx:id="tableTen" prefWidth="171.0" text="Tên" />
                   <TableColumn fx:id="tableNamSinh" prefWidth="106.0" text="Năm sinh" />
                   <TableColumn fx:id="tableTuoi" prefWidth="76.0" text="Tuổi" />
-                  <TableColumn fx:id="tableTongLg" prefWidth="158.0" text="Tổng thu nhập" />
+                  <TableColumn fx:id="tableTongLg" prefWidth="204.0" text="Tổng thu nhập" />
               </columns>
             </TableView>
             <Button layoutX="29.0" layoutY="339.0" mnemonicParsing="false" onAction="#Nhap" prefHeight="52.0" prefWidth="86.0" text="Nhập">
