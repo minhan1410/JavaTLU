@@ -2,7 +2,7 @@ package B7;
 
 import java.util.Random;
 
-public class NhanVienPartTime extends NhanVien {
+public class NhanVienPartTime extends NhanVien1 {
     private int gioLV;
 
     public NhanVienPartTime() {
@@ -36,7 +36,7 @@ public class NhanVienPartTime extends NhanVien {
     }
 
     public static void main(String[] args) {
-        NhanVien[] nv = new NhanVien[5];
+        NhanVien1[] nv = new NhanVien1[5];
         Random random = new Random();
         int a;
         for (int i = 0; i < 5; i++) {

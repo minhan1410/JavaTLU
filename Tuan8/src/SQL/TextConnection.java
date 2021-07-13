@@ -3,10 +3,7 @@ package SQL;
 import com.microsoft.sqlserver.jdbc.SQLServerDataSource;
 import com.microsoft.sqlserver.jdbc.SQLServerException;
 
-import java.sql.Connection;
-import java.sql.ResultSet;
-import java.sql.SQLException;
-import java.sql.Statement;
+import java.sql.*;
 
 public class TextConnection {
     public static void main(String[] args) throws SQLException {
@@ -38,7 +35,28 @@ public class TextConnection {
                 System.out.println(mk.equals("1234")+" - "+tk.equals("tien"));
             }
 
+            //add tk,mk: 1-2
+//            String aa = "INSERT INTO DangNhap (tk,mk) values (?, ?)";
+//            PreparedStatement preparedStatement=connection.prepareStatement(aa);
+//            preparedStatement.setString(1,"hi");
+//            preparedStatement.setString(2,"how are you");
+//            int i= preparedStatement.executeUpdate();
+//            System.out.println(i);
 
+            //Sua mk,tk: 1-2
+//            String aa = "UPDATE DangNhap SET mk=? where tk=?";
+//            PreparedStatement preparedStatement=connection.prepareStatement(aa);
+//            preparedStatement.setString(1,"hi1");
+//            preparedStatement.setString(2,"hi");
+//            int i= preparedStatement.executeUpdate();
+//            System.out.println(i);
+
+//            Xoa tk:1
+            String aa="DELETE FROM DangNhap where tk=?";
+            PreparedStatement preparedStatement=connection.prepareStatement(aa);
+            preparedStatement.setString(1,"hi");
+            int i= preparedStatement.executeUpdate();
+            System.out.println(i);
 
         } catch (SQLServerException throwables) {
             throwables.printStackTrace();

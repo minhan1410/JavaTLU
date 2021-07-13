@@ -1,13 +1,13 @@
 package B7;
 
-public class NhanVien {
+public class NhanVien1 {
     private String ten;
 
-    public NhanVien() {
+    public NhanVien1() {
         this("");
     }
 
-    public NhanVien(String ten) {
+    public NhanVien1(String ten) {
         this.ten = ten;
     }
 

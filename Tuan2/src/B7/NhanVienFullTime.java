@@ -1,6 +1,6 @@
 package B7;
 
-public class NhanVienFullTime extends NhanVien {
+public class NhanVienFullTime extends NhanVien1 {
     private int ngayLV;
 
     public NhanVienFullTime() {

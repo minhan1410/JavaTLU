@@ -193,6 +193,7 @@ public class ControlNhanVien implements Initializable {
 
             Stage stage = new Stage();
             stage.setScene(new Scene(root));
+            stage.setTitle("Thuế thu nhập cá nhân");
             stage.show();
         } catch (Exception exception){
             Alert alert=new Alert(Alert.AlertType.ERROR);

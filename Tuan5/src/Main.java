@@ -119,7 +119,7 @@ public class Main {
 
     public static void main(String[] args) {
 //        B1();
-        B2();
-//        B3();//        CHECK: c c c a a a b b b e e e d d d
+//        B2();
+        B3();//        CHECK: c c c a a a b b b e e e d d d an lan can
     }
 }

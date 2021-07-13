@@ -24,11 +24,11 @@
             <Font size="18.0" />
          </font></Text>
       <TextField fx:id="nguoiText" layoutX="219.0" layoutY="121.0" prefHeight="21.0" prefWidth="79.0" />
-      <Button layoutX="310.0" layoutY="165.0" mnemonicParsing="false" onAction="#Tinh" prefHeight="44.0" prefWidth="79.0" text="Tính ">
+      <Button layoutX="472.0" layoutY="165.0" mnemonicParsing="false" onAction="#Tinh" prefHeight="44.0" prefWidth="79.0" text="Tính ">
          <font>
             <Font size="20.0" />
          </font></Button>
-      <Button layoutX="406.0" layoutY="165.0" mnemonicParsing="false" onAction="#Reset" prefHeight="44.0" prefWidth="79.0" text="Reset">
+      <Button layoutX="612.0" layoutY="166.0" mnemonicParsing="false" onAction="#Reset" prefHeight="44.0" prefWidth="79.0" text="Reset">
          <font>
             <Font size="20.0" />
          </font></Button>
@@ -53,6 +53,13 @@
       <Text fx:id="tienText" layoutX="219.0" layoutY="96.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.01953125" />
       <Text fx:id="thueCaNamText" layoutX="676.0" layoutY="142.0" strokeType="OUTSIDE" strokeWidth="0.0" wrappingWidth="130.01953125" />
       <Text layoutX="472.0" layoutY="143.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Thuế thu nhập cả năm:" wrappingWidth="183.8466796875">
+         <font>
+            <Font size="18.0" />
+         </font>
+      </Text>
+      <RadioButton fx:id="thang" layoutX="224.0" layoutY="176.0" mnemonicParsing="false" onAction="#setToggle" text="Tháng" />
+      <RadioButton fx:id="nam" layoutX="320.0" layoutY="176.0" mnemonicParsing="false" onAction="#setToggle" text="Năm" />
+      <Text layoutX="113.0" layoutY="194.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Tính theo:" wrappingWidth="94.39794921875">
          <font>
             <Font size="18.0" />
          </font>
