@@ -1,0 +1,2 @@
+FlowPane là một bộ chứa (Container), nó có thể chứa các Control hoặc các bộ chứa khác.
+Nó sắp xếp các thành phần con liên tiếp nhau trên một dòng, và tự động đẩy phần tử con xuống dòng tiếp theo nếu dòng hiện tại không còn chỗ trống.

@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Main22.StudentDetailController">
+   <children>
+      <Label layoutX="210.0" layoutY="35.0" prefHeight="43.0" prefWidth="156.0" text="Student Detail">
+         <font>
+            <Font size="24.0" />
+         </font>
+      </Label>
+      <Label layoutX="78.0" layoutY="113.0" prefHeight="32.0" prefWidth="59.0" text="ID" />
+      <Label layoutX="78.0" layoutY="179.0" prefHeight="21.0" prefWidth="47.0" text="Name" />
+      <Label layoutX="250.0" layoutY="119.0" prefHeight="21.0" prefWidth="38.0" text="Email" />
+      <Label layoutX="252.0" layoutY="179.0" text="Age" />
+      <Label fx:id="ageLabel" layoutX="317.0" layoutY="179.0" text="Age" />
+      <Label fx:id="emailLabel" layoutX="311.0" layoutY="120.0" prefHeight="21.0" prefWidth="85.0" text="Email" />
+      <Label fx:id="nameLabel" layoutX="137.0" layoutY="179.0" prefHeight="21.0" prefWidth="47.0" text="Name" />
+      <Label fx:id="idLabel" layoutX="137.0" layoutY="114.0" prefHeight="32.0" prefWidth="59.0" text="ID" />
+      <Button layoutX="334.0" layoutY="261.0" mnemonicParsing="false" onAction="#goBack" text="Back" />
+   </children>
+</AnchorPane>

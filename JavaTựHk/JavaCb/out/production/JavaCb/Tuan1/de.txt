@@ -1,0 +1,24 @@
+1. Viết một phương thức trả về tổng n số lẻ đầu tiên. Với n nhập từ bàn phím.
+2. Viết một phương thức kiểm tra xem một số nguyên có nhiều nhất 5 chữ số phải là số Palindrome
+không ?
+3. Viết quá tải phương thức cho các số nguyên để kiểm tra một số có phải số nguyên tố không.
+4. Viết phương với đầu vào là một số nguyên có 4 chữ số, sau đó trả về là một chuỗi dạng chữ của số
+nguyên. Ví dụ: 9345 = Chín nghìn ba trăm bốn mươi lăm.
+5. Tìm ước số chung lớn nhất và bội số chung nhỏ nhất của 2 số nguyên nhập từ bàn phím. (Xây dựng
+hai phương thức tìm ước số chung và bội số chung khác nhau).
+6. Viết chương trình in ra các số nguyên tố nằm trong khoảng từ 1 đến n. (chú ý sử dụng phương thức
+kiểm tra số nguyên tố)
+7. Nhập 1 dãy số nguyên có giá trị lớn hơn 0, kết thúc việc nhập dãy số nguyên đó bằng số 0. Sau đó:
++ Đưa ra màn hình số lớn nhất và số nhỏ nhất có trong dãy số.
++ Tính tổng và trung bình cộng các số có trong dãy.
+Chú ý: Không sử dụng mảng.
+8. Viết chương trình nhập vào số bytes, sau đó đưa ra màn hình số Gigabytes, Megabytes, Kilobytes và
+Bytes tương ứng. Ví dụ: 1_075_838_977 bytes = 1GB + 2MB + 1Byte
+9. Viết chương trình nhập vào số giây, sau đó đưa ra màn hình số năm, ngày, giờ, phút, giây tương ứng.
+Ví dụ: 1_075_838_977 giây = x năm + y ngày + z ngày + m giờ + n phút + q giây
+10. Tính tổng S(n) = ½ + ¼ + … + 1/2n
+11. Xây dựng chương trình làm việc với mảng số nguyên như sau
+a. Nhập một mảng các số nguyên vào từ bàn phím với số phần tử cho trước.
+b. Xây dựng các hàm trả về giá trị lớn nhất và giá trị nhỏ nhất của mảng, với mảng số nguyên là tham
+số đầu vào của hàm.
+c. Xây dựng hàm dùng để sắp xếp mảng, với mảng số nguyên là tham số đầu vào của hàm.

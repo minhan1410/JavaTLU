@@ -1,0 +1,61 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="429.0" prefWidth="597.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Controller">
+   <children>
+      <TabPane prefHeight="425.0" prefWidth="596.0" tabClosingPolicy="UNAVAILABLE">
+        <tabs>
+          <Tab text="Lai xe">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="389.0" prefWidth="586.0">
+                     <children>
+                        <TableView fx:id="tLX" layoutY="-1.0" prefHeight="207.0" prefWidth="597.0">
+                          <columns>
+                            <TableColumn fx:id="tMa" prefWidth="75.0" text="Ma" />
+                            <TableColumn fx:id="tTen" prefWidth="198.0" text="Ten" />
+                              <TableColumn fx:id="tDC" prefWidth="226.0" text="Dia chi" />
+                              <TableColumn fx:id="tTD" prefWidth="96.0" text="Trinh do" />
+                          </columns>
+                        </TableView>
+                        <TextField fx:id="ten" layoutX="186.0" layoutY="224.0" />
+                        <TextField fx:id="dc" layoutX="186.0" layoutY="271.0" />
+                        <TextField fx:id="td" layoutX="186.0" layoutY="324.0" />
+                        <Label layoutX="49.0" layoutY="224.0" prefHeight="35.0" prefWidth="76.0" text="Ten" />
+                        <Label layoutX="43.0" layoutY="269.0" prefHeight="35.0" prefWidth="76.0" text="Dia chi" />
+                        <Label layoutX="43.0" layoutY="324.0" prefHeight="35.0" prefWidth="76.0" text="Trinh do" />
+                        <Button layoutX="414.0" layoutY="255.0" mnemonicParsing="false" onAction="#addLX" prefHeight="47.0" prefWidth="70.0" text="Them" />
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+          <Tab text="Tuyen">
+            <content>
+              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                     <children>
+                        <TableView prefHeight="206.0" prefWidth="597.0">
+                           <columns>
+                              <TableColumn prefWidth="139.0" text="Ma" />
+                              <TableColumn prefWidth="251.0" text="Khoang cach" />
+                              <TableColumn prefWidth="205.0" text="So diem dung" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
+            </content>
+          </Tab>
+            <Tab text="Bang phan cong">
+              <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="170.0" prefWidth="601.0" />
+              </content>
+            </Tab>
+        </tabs>
+      </TabPane>
+   </children>
+</FlowPane>

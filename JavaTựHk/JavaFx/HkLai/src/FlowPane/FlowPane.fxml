@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+
+
+<FlowPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="489.0" prefWidth="290.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <Button mnemonicParsing="false" prefHeight="105.0" prefWidth="225.0" text="Button" textFill="#00ff50">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Button>
+      <Button mnemonicParsing="false" prefHeight="205.0" prefWidth="253.0" text="Button1" textFill="RED">
+         <font>
+            <Font size="42.0" />
+         </font>
+      </Button>
+      <TextField prefHeight="31.0" prefWidth="237.0" />
+      <CheckBox mnemonicParsing="false" text="CheckBox">
+         <font>
+            <Font size="26.0" />
+         </font>
+      </CheckBox>
+      <RadioButton mnemonicParsing="false" text="RadioButton" />
+      <RadioButton mnemonicParsing="false" text="RadioButton" />
+   </children>
+</FlowPane>

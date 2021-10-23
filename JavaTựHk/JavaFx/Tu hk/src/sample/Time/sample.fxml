@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.text.*?>
+<?import java.lang.*?>
+<?import java.util.*?>
+<?import javafx.scene.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+
+<AnchorPane prefHeight="238.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/8" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.Time.Controller">
+   <children>
+      <Button fx:id="button" layoutX="139.0" layoutY="39.0" mnemonicParsing="false" onAction="#ShowTime" text="Hiển thị thời gian" textFill="RED">
+         <font>
+            <Font size="33.0" />
+         </font>
+      </Button>
+      <TextField fx:id="text" layoutX="37.0" layoutY="140.0" prefHeight="57.0" prefWidth="500.0">
+         <font>
+            <Font name="Times New Roman" size="31.0" />
+         </font>
+      </TextField>
+   </children>
+</AnchorPane>

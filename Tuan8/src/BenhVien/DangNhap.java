@@ -33,7 +33,7 @@ public class DangNhap {
 //        Kết nối với SQL SERVER
         SQLServerDataSource sqlServerDataSource=new SQLServerDataSource();
         sqlServerDataSource.setUser("sa");
-        sqlServerDataSource.setPassword("14102001");
+            sqlServerDataSource.setPassword("14102001");
         sqlServerDataSource.setServerName("DESKTOP-LD6PBDF\\SQLEXPRESS");
         sqlServerDataSource.setPortNumber(1433);
         sqlServerDataSource.setDatabaseName("BenhVien");

@@ -1,0 +1,10 @@
+.button1 {
+    -fx-font-size: 20px;
+    -fx-background-color: rgba(0,150,150,1);
+    -fx-padding: 5 5 5 5;
+    -fx-font-weight: bold;
+    -fx-text-fill: green;
+}
+.root {
+    -fx-background-color: gray;
+}

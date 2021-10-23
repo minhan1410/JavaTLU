@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Date.control">
+   <children>
+      <Button fx:id="button" layoutX="171.0" layoutY="21.0" mnemonicParsing="false" onAction="#show" prefHeight="75.0" prefWidth="237.0" text="Show date time" textFill="RED">
+         <font>
+            <Font size="27.0" />
+         </font>
+      </Button>
+      <TextField fx:id="show" layoutX="130.0" layoutY="154.0" prefHeight="54.0" prefWidth="345.0" />
+   </children>
+</AnchorPane>

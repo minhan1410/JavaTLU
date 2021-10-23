@@ -1,0 +1,9 @@
+{
+    "java.dependency.syncWithFolderExplorer": true,
+    "java.dependency.packagePresentation": "flat",
+    "java.project.sourcePaths": [
+        // "src/VD",
+        "src"
+    ],
+    "files.autoSave": "afterDelay"
+}

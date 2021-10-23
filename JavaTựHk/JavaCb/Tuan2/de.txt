@@ -1,0 +1,72 @@
+1. Xây dựng lớp SinhVien gồm các thuộc tính mã sinh viên, họ và tên, năm sinh và điểm Java. Xây
+dựng các phương thức đặt và lấy giá trị các thuộc tính cho lớp SinhVien này. Ngoài ra, xây dựng một
+phương thức trả về tuổi của sinh viên và một phương thức tên là hienThiThongTin() được sử dụng để
+hiển thị thông tin của SinhVien theo cú pháp:
+Sinh viên <họ và tên>, <tuổi> tuổi, có mã sinh viên là <mã sinh viên> đạt <điểm Java> điểm Java.
+Viết minh họa bên trong hàm main()
+2. Tạo một lớp quản lý tài khoản ngân hàng gồm các thuộc tính số tài khoản, số dư, tên khách hàng,
+email và số điện thoại.
+a. Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính.
+b. Tạo phương thức gửi tiền để cho phép khách hàng tăng số dư tài khoản lên.
+c. Tạo phương thức rút tiền để cho phép khách hàng giảm số dư tài khoản xuống, tuy nhiên không cho
+phép rút nếu số dư tài khoản nhỏ hơn số tiền cần rút.
+d. Viết minh họa bên trong hàm main()
+3. Xây dựng lớp quản lý tọa độ của điểm trên không gian 2 chiều có tên là Point, lớp gồm có hai thuộc
+tính x và y với kiểu dữ liệu là int.
+a. Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính.
+b. Xây dựng phương thức khoangcach không tham số, được dùng để tính khoảng cách của tọa độ hiện
+tại với gốc tọa độ.
+c. Xây dựng phương thức khoangcach 02 tham số x và y có kiểu dữ liệu là int, được dùng để tính
+khoảng cách của tọa độ hiện tại với tọa độ (x, y).
+d. Xây dựng phương thức khoangcach 01 tham số có kiểu dữ liệu là Point, được dùng để tính khoảng
+cách của tọa độ hiện tại với tọa độ được truyền vào thông qua lớp Point.
+e. Viết minh họa bên trong hàm main()
+4. a. Xây dựng lớp HinhTron có một thuộc tính tên là bán kính và có kiểu double.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính (Chú ý trường hợp nếu bán
+kính được đưa vào nhỏ hơn 0 thì gán cho bán kính bằng 0).
+- Viết phương thức trả về diện tích của hình tròn.
+b. Xây dựng lớp HinhTruTron kế thừa từ lớp HinhTron ở trên và có thêm một thuộc tính có kiểu
+double để thể hiện chiều cao của hình trụ tròn.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính (Chú ý trường hợp nếu chiều
+cao được đưa vào nhỏ hơn 0 thì gán cho chiều cao bằng 0).
+- Viết phương thức tính thể tích của hình trụ tròn.
+c. Viết minh họa bên trong hàm main()
+5. a. Xây dựng lớp HinhChuNhat có hai thuộc tính tên là chiều dài và chiều rộng và có kiểu double.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính (Chú ý trường hợp nếu chiều
+dài hay chiều rộng được đưa vào nhỏ hơn 0 thì gán cho chúng giá trị bằng 0).
+- Viết phương thức trả về diện tích của hình chữ nhật.
+b. Xây dựng lớp HinhLapPhuong kế thừa từ lớp HinhChuNhat ở trên và có thêm một thuộc tính có
+kiểu double để thể hiện chiều cao của hình lập phương.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính (Chú ý trường hợp nếu chiều
+cao được đưa vào nhỏ hơn 0 thì gán cho chiều cao bằng 0).
+- Viết phương thức tính thể tích của hình lập phương.
+c. Viết minh họa bên trong hàm main()
+6. a. Xây dựng lớp NhanVien có thuộc tính họ và tên.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính.
+- Viết phương thức tính lương để trả về số tiền lương của nhân viên (giả sử ở lớp này phương
+thức sẽ trả về giá trị là 0).
+b. Xây dựng lớp NhanVienFullTime kế thừa từ lớp NhanVien ở trên và có thêm một thuộc tính là số
+lượng ngày làm việc trong tháng có kiểu int.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính.
+- Nạp chồng phương thức tính lương để trả về số tiền lương của nhân viên theo công thức:
+tiền lương = số ngày làm việc * 500.000đ
+c. Xây dựng lớp NhanVienPartTime kế thừa từ lớp NhanVien ở trên và có thêm một thuộc tính là số
+lượng giờ làm việc trong tháng có kiểu int.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị các thuộc tính.
+- Nạp chồng phương thức tính lương để trả về số tiền lương của nhân viên theo công thức:
+tiền lương = số giờ làm việc * 40.000đ
+d. Trong hàm main() minh họa:
+- Xây dựng 5 đối tượng thuộc lớp NhanVien.
+- Với mỗi đối tượng thuộc lớp NhanVien ở trên, ta thực hiện:
++ Sinh một số ngẫu nhiên trong khoảng từ 1 đến 100.
++ Nếu số ngẫu nhiên là số lẻ thì khởi tạo đối tượng NhanVienFullTime cho đối tượng
+NhanVien tương ứng. Số ngày làm việc sẽ là một số ngẫu nhiên nằm từ 15 cho đến 25 ngày.
++ Nếu số ngẫu nhiên là số chẵn thì khởi tạo đối tượng NhanVienPartTime cho đối
+tượng NhanVien tương ứng. Số giờ làm việc sẽ là một số ngẫu nhiên nằm từ 80 cho đến 200 giờ.
+- In ra màn hình số tiền lương mà mỗi nhân viên nhận được.
+7. Xây dựng lớp SoNgauNhien có một thuộc tính là số ngẫu nhiên kiểu int.
+- Tạo cấu tử và các phương thức đặt và lấy giá trị thuộc tính. Trong đó phương thức set hoặc
+cấu tử mặc định sẽ sinh ra một số ngẫu nhiên nằm trong khoảng từ 1 đến 100.
+- Trong hàm main(): Tạo ra một số lượng tùy ý các đối tượng của lớp SoNgauNhien. Bạn hãy
+sửa đổi lớp SoNgauNhien sao cho chương trình có thể in ra màn hình bạn đã tạo ra bao nhiêu đối
+tượng lớp SoNgauNhien (có thể thêm thuộc tính, phương thức cho lớp SoNgauNhien này)

@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.text.*?>
+
+<AnchorPane prefHeight="595.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.NhanVien.Controller">
+   <children>
+      <Label layoutX="53.0" layoutY="55.0" prefHeight="48.0" prefWidth="140.0" text="Ma: " textFill="RED">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <Label layoutX="53.0" layoutY="128.0" prefHeight="48.0" prefWidth="140.0" text="Ten: " textFill="RED">
+         <font>
+            <Font size="40.0" />
+         </font>
+      </Label>
+      <TextField fx:id="MA" layoutX="193.0" layoutY="69.0" />
+      <TextField fx:id="TEN" layoutX="193.0" layoutY="142.0" />
+      <Button layoutX="344.0" layoutY="222.0" mnemonicParsing="false" onAction="#Add" text="Add" textFill="RED">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Button>
+      <Button layoutX="123.0" layoutY="229.0" mnemonicParsing="false" onAction="#Show" text="Show" textFill="RED">
+         <font>
+            <Font size="37.0" />
+         </font>
+      </Button>
+      <TableView fx:id="table" layoutX="14.0" layoutY="381.0" onSort="#Add" prefHeight="200.0" prefWidth="570.0">
+         <columns>
+            <TableColumn fx:id="tID" prefWidth="132.0" text="ID" />
+            <TableColumn fx:id="tMA" prefWidth="182.0" text="MA" />
+            <TableColumn fx:id="tTEN" prefWidth="254.0" text="TEN" />
+         </columns>
+      </TableView>
+   </children>
+</AnchorPane>

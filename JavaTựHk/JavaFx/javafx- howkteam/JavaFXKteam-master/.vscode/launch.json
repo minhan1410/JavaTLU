@@ -1,0 +1,199 @@
+{
+    // Use IntelliSense to learn about possible attributes.
+    // Hover to view descriptions of existing attributes.
+    // For more information, visit: https://go.microsoft.com/fwlink/?linkid=830387
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "type": "java",
+            "name": "Launch Main",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.NhanVien.Main",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Current File",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main1",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main1",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main10",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main10.Main10",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main11",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main11.Main11",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main12",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main12.Main12",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main13",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main13.Main13",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main14",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main14.Main14",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main15",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main15.Main15",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main16",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main16.Main16",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main17",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main17.Main17",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main18",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main18.Main18",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main19",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main19.Main19",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main2",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main2",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main20",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main20.Main20",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main21",
+            "request": "launch",
+            "mainClass": "sample.Main21.Main21",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main22",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main22.Main22",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main3",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main3",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main4",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main4",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main5",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main5",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main6",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main6",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main7",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main7",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main8",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main8.Main8",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        },
+        {
+            "type": "java",
+            "name": "Launch Main9",
+            "request": "launch",
+            "vmArgs": "--module-path C:/Users/admin/Downloads/openjfx-11.0.2_windows-x64_bin-sdk/javafx-sdk-11.0.2/lib --add-modules javafx.controls,javafx.fxml",
+            "mainClass": "sample.Main9.Main9",
+            "projectName": "JavaFXKteam-master_4c82459d"
+        }
+    ]
+}
